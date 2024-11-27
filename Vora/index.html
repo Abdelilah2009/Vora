@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <title>T-Kora | Abdelilah Ed</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar" id="navbar">
+      <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#store">product</a></li>
+        <li><a href="#store">features</a></li>
+        <li><a href="#contact">contact</a></li>
+        <div class="close"><i class="bx bx-x"></i></div>
+      </ul>
+      <div class="btns-bar">
+        <a href="#">sign in</a>
+        <a href="#">sign up</a>
+      </div>
+      <div class="mobile">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+
+    <main>
+      <article>
+
+        <!-- HERO -->
+
+        <section class="section hero has-bg-image" aria-label="home" id="home">
+          <div class="container">
+            <div class="hero-content-text">
+              <h1>Lorem ipsum dolor</h1>
+
+              <div class="hh">
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Sapiente placeat error veniam, nisi deleniti voluptates
+                  quaerat.
+                </p>
+
+                <div class="btn-wrapper">
+                  <a href="#store" class="btn">Explore Now</a>
+                  <a href="#contact" class="btn">Contact Us</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-slider" data-slider>
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="assets/imgs-hero/hero-slide-3.jpg"
+                        width="575"
+                        height="550"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="assets/imgs-hero/hero-slide-1.jpg"
+                        width="575"
+                        height="550"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <div class="hero-card">
+                      <figure
+                        class="img-holder"
+                        style="--width: 575; --height: 550"
+                      >
+                        <img
+                          src="assets/imgs-hero/hero-slide-2.jpg"
+                          width="575"
+                          height="550"
+                          alt="hero banner"
+                          class="img-cover"
+                        />
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="assets/imgs-hero/hero-slide-4.jpg"
+                        width="575"
+                        height="550"
+                        alt="hero banner"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                class="slider-btn prev"
+                aria-label="slide to previous"
+                data-slider-prev
+              >
+                <i class="bx bx-left-arrow-alt"></i>
+              </button>
+
+              <button
+                class="slider-btn next"
+                aria-label="slide to next"
+                data-slider-next
+              >
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- ABOUT -->
+
+    <main class="bg-c">
+      <section class="section__container about__container" id="about">
+        <div class="about__header">
+          <div class="about__image">
+            <img src="assets/img-about/img-about.jpeg" alt="about" />
+          </div>
+          <div class="about__content">
+            <p class="section__title">About Us</p>
+            <h2 class="section__header">
+              Lorem ipsum dolor sit amet consectetur.
+            </h2>
+            <div class="hh">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                debitis culpa nam ullam fuga officiis. Saepe cupiditate at unde
+                voluptates eaque veritatis, id pariatur ut quos magnam quia
+                obcaecati esse, sequi voluptatum, beatae necessitatibus sint!
+                Neque sint deserunt iure amet quaerat quia modi.
+              </p>
+              <a href="#home"><button class="btn">Learn More</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- STORE -->
+
+    <section class="section__container store__container" id="store">
+      <p class="section__title">Store</p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 1</h4>
+              <img src="assets/imgs-balls/ball-10.jpg" alt="store" />
+              <h3>Price- 1200 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 2</h4>
+              <img src="assets/imgs-balls/ball-1.jpg" alt="store" />
+              <h3>Price- 1200 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 3</h4>
+              <img src="assets/imgs-balls/ball-2.jpg" alt="store" />
+              <h3>Price- 1250 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 4</h4>
+              <img src="assets/imgs-balls/ball-3.jpg" alt="store" />
+              <h3>Price- 1100 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 5</h4>
+              <img src="assets/imgs-balls/ball-4.jpg" alt="store" />
+              <h3>Price- 1900 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 6</h4>
+              <img src="assets/imgs-balls/ball-5.jpg" alt="store" />
+              <h3>Price- 1000 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 7</h4>
+              <img src="assets/imgs-balls/ball-6.jpg" alt="store" />
+              <h3>Price- 1500 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 8</h4>
+              <img src="assets/imgs-balls/ball-7.jpg" alt="store" />
+              <h3>Price- 1300 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 9</h4>
+              <img src="assets/imgs-balls/ball-8.jpg" alt="store" />
+              <h3>Price- 1350 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 10</h4>
+              <img src="assets/imgs-balls/ball-9.jpg" alt="store" />
+              <h3>Price- 2000 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 11</h4>
+              <img src="assets/imgs-balls/ball-11.jpg" alt="store" />
+              <h3>Price- 1100 dh</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Ball - 12</h4>
+              <img src="assets/imgs-balls/ball-12.jpg" alt="store" />
+              <h3>Price- 1050 dh</h3>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <main id="contact">
+      <section class="contact contact-form">
+        <p class="section__title">Contact Us</p>
+        <h1 class="heading hh2">Lorem, ipsum dolor.</h1>
+        <p class="para hh2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+          inventore omnis aliquid rerum alias molestias.
+        </p>
+
+        <div class="contactForm">
+          <form action="#">
+            <h1 class="sub-heading hh3">Lorem, ipsum.</h1>
+            <input type="text" class="input" placeholder="your name" />
+            <input type="email" class="input" placeholder="your email" />
+            <input type="text" class="input" placeholder="your Subject" />
+            <textarea
+              class="input"
+              cols="30"
+              rows="5"
+              placeholder="Your message..."
+            ></textarea>
+            <input type="submit" class="input submit" value="Send Message" />
+          </form>
+
+          <div class="img-container-contact">
+            <div class="imgBg"></div>
+            <div class="img-contact">
+              <img src="assets/33.jpg" alt="img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="contactMethod">
+          <div class="method">
+            <article class="text">
+              <h1 class="sub-heading">Location</h1>
+              <p class="para">1234 Lorem ipsum dolor sit.</p>
+            </article>
+          </div>
+
+          <div class="method">
+            <article class="text">
+              <h1 class="sub-heading">Email</h1>
+              <p class="para">Email: loremipsumdolor123@gmail.com</p>
+            </article>
+          </div>
+
+          <div class="method">
+            <article class="text">
+              <h1 class="sub-heading">Phone</h1>
+              <p class="para">+123 4567890000</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <a href="#"
+              ><img src="assets/logo.png" alt="logo" />
+              <h2>T-<span>Kora</span></h2></a
+            >
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Our Links</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact Us</li>
+            <li><a href="#">+123 014145414</a></li>
+            <li><a href="#">+123 44445577</a></li>
+            <li><a href="#">loremipsumdolor123@gmail.com</a></li>
+            <li><a href="#">loremipsumelit456@gmail.com</a></li>
+          </ul>
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email" /></li>
+            <li><input type="button" value="Subscribe" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2024
+            <a href="https://abdelilah-portfolio.vercel.app/">Abdelilah Edd </a
+            >All rights reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
