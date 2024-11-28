@@ -12,6 +12,7 @@
   --main-color: #1B1464;
   --black-color: #000;
   --white-color: #ffffff;
+  --main-color-2: #f0f8ff;
 }
 
 ::-webkit-scrollbar {
@@ -40,7 +41,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
-  /* background-color: #eaeef1; */
+  background-color: var(--white-color);
 }
 
 i {
@@ -100,6 +101,7 @@ img {
 
 .flex{
   display: flex;
+  gap: 20px;
 }
 
 /* NAVBAR */
@@ -163,6 +165,23 @@ img {
 #navbar .btns-bar .btn-nav:active{
   transform: scale(0.9);
 }
+
+.dpl-none{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #navbar ul .close i,
@@ -297,7 +316,7 @@ img {
 /* ABOUT */
 
 .bg-c {
-  background-color: #f0f8ff;
+  background-color: var(--main-color-2);
 }
 
 .about__header {
@@ -427,7 +446,7 @@ section {
 }
 
 #contact {
-  background: #f0f8ff;
+  background: var(--main-color-2);
   padding: 50px 0;
 }
 
@@ -469,7 +488,7 @@ form {
   font-size: 0.9rem;
   padding: 1em;
   outline: none;
-  background-color: #f0f8ff;
+  background-color: var(--main-color-2);
   color: var(--black-color);
   border-radius: 10px;
   border: 1px solid rgb(53, 53, 53);
