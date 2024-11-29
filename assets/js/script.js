@@ -83,17 +83,15 @@ const swiper = new Swiper(".swiper", {
     },
   });
 
+  /**
+   *  ANIMATION
+   */
 
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
   duration: 1000,
 };
-
-
-  /**
-   *  ANIMATION
-   */
 
 ScrollReveal().reveal(".hh", {
   ...scrollRevealOption,
@@ -162,14 +160,6 @@ ScrollReveal().reveal("footer", {
 });
 
 
-
-
-
-
-
-
-
-
   /**
    * DARK MODE
    */
@@ -194,57 +184,3 @@ themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem('darkmode')
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
