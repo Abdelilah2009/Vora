@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: none;
   list-style: none;
+
 }
 
 :root {
@@ -15,7 +16,6 @@
   --main-color-2: #f0f8ff;
 }
 
-/* .darkdome{} */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -106,7 +106,6 @@ img {
   gap: 20px;
 }
 
-
 /* DARK MODE */
 
 .dpl-none{
@@ -117,7 +116,8 @@ img {
   --main-color: #1B1464;
   --black-color: #ffffff;
   --white-color: #000;
-  --main-color-2: #101425;
+  --main-color-2: #3030309d;
+  /* --main-color-2: #101425; */
 }
 
 .darkmode .dpl{
@@ -133,11 +133,12 @@ img {
   justify-content: space-between;
   align-items: center;
   background: var(--main-color-2);
-  box-shadow: 0 2px 10px #1900ff31;
+  box-shadow: 0 2px 10px #ffffff7a;
   padding: 15px 40px;
   position: relative;
   width: 100%;
   height: 100px;
+  color: #1d44f2;
 }
 
 .darkmode #navbar a {
@@ -216,7 +217,7 @@ img {
 
 #navbar .btns-bar .btn-nav:hover{
   background: transparent;
-  color: var(--main-color);
+  color: var(--black-color);
 }
 
 #navbar .btns-bar .btn-nav:active{
@@ -545,7 +546,7 @@ form {
 .submit {
   background-color: var(--main-color);
   border: none;
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: bold;
   cursor: pointer;
   width: 95%;
@@ -554,7 +555,7 @@ form {
 
 .submit:hover {
   background-color: var(--main-color);
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .submit:active{
@@ -828,6 +829,47 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
   margin-right: 10px;
 }
+
+
+/* CURSOR */
+
+.cursor-dot,
+.cursor-outline {
+  display: block;
+  position: fixed;
+  top: -60px;
+  left: -60px;
+  transform: translate(-50%, -50%);
+  border-radius:  50%;
+  z-index: 10;
+  transition-property: opacity, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 60px;
+  height: 60px;
+  background-color: var(--black-color);
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.cursor-dot.hovered {
+  transform: translate(-50%, -50%) scale(1);
+  mix-blend-mode: exclusion;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--black-color);
+  opacity: 0.5;
+  transition-duration: 100ms;
+}
+
+.cursor-outline.hovered { opacity: 0; }
+
 
 @media (max-width: 900px) {
   footer .content .link-boxes {
